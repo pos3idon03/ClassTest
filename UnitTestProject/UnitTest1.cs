@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ConsoleProject;
 
 namespace UnitTestProject
 {
@@ -7,8 +8,15 @@ namespace UnitTestProject
     public class UnitTest1
     {
         [TestMethod]
-        public void SUM()
+        public void Test_Sum()
         {
+            int a = 4;
+            int b = 5;
+            int expected = 9;
+
+            int actual = Program.Sum(a, b);
+
+            Assert.AreEqual(expected, actual);
 
         }
     }
