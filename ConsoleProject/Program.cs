@@ -10,6 +10,17 @@ namespace ConsoleProject
     {
         static void Main(string[] args)
         {
+            
+        }
+
+        static public int SUM(int a, int b)
+        {
+            return a + b;
+        }
+
+        static public int Mult(int a,int b)
+        {
+            return a * b;
         }
     }
 }
